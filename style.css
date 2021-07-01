@@ -1,0 +1,66 @@
+.About
+{
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    height: 500px;
+    padding-top: 13%;
+}
+
+.Skills
+{
+    background-color: white;
+    height: auto;
+}
+
+.Projects
+{
+    background-color: #F6F7F8;
+}
+
+.Contact
+{
+    background-color: #04A7EA;
+}
+
+.Footer
+{
+    background-color: #191E25;
+}
+
+#icons
+{
+    text-align: right;
+}
+
+.container
+{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.imageScaling
+{
+    width: 250px;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.text-left
+{
+    margin-right:auto;
+}
+
+.ruimte
+{
+    margin-bottom: 50px;
+    height: 30px;
+}
+
+.progress-bar
+{
+    height: 30px;
+}
+
+.imageSpace
+{
+    margin-bottom: 30px;
+}

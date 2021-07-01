@@ -1,0 +1,284 @@
+/*Reset Css*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section 
+{
+	display: block;
+}
+body 
+{
+	line-height: 1;
+}
+ol, ul
+ {
+	list-style: none;
+}
+blockquote, q 
+{
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after 
+{
+	content: '';
+	content: none;
+}
+table 
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body 
+{
+	font-family: "Roboto",Sans-serif;
+	scroll-behavior: smooth;
+	color: black;
+}
+/*End Reset Css*/
+
+::-webkit-scrollbar 
+{
+	display: none;
+}
+
+.container  
+{
+  position: relative;
+  text-align: center;
+  margin: auto;
+  max-width: 1200px;
+  overflow: inherit;
+}
+
+
+
+.WelkomTekst 
+{
+	position: absolute;
+	color: white;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+}
+
+.Thumbnail 
+{
+	height: 300px;
+	width: 100%;
+	display: flex;
+	position: relative;
+
+}
+
+.TinyHouseImage 
+{
+    float: left;
+    width: 24%;
+	padding: 10px;
+}
+
+.cd-popup 
+{
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(94, 110, 141, 0.9);
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+	-moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+	transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  }
+
+  
+  .cd-popup.is-visible 
+  {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+	-moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+	transition: opacity 0.3s 0s, visibility 0s 0s;
+  }
+
+  .CenterImage 
+  {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  background-color: black;
+	  height: 400px;
+  }
+
+
+  .TinyHouseImage_Click
+  { 
+	  width: 32%;
+	  height: inherit;
+	  margin-left:auto;
+	  margin-right: auto;
+	  display: block;
+	  float: left;
+	  padding:  5px;
+	  text-align: center;
+
+  }
+
+  .cd-popup-trigger 
+  {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	height: 28px;
+	position: relative;
+	top: 50%;
+	left: -8%;
+	margin-left: -115px;
+  }
+
+
+  div.A 
+  {
+	text-align: center;
+	padding: 2px;
+  }
+
+  footer 
+  {
+	  height: 100px;
+	  width: 100%;
+	  background-color:black;
+	  color: white;
+  }
+  
+.socialmedia 
+{
+	width: 100%;
+	float: left;
+}
+
+svg 
+{
+	width: 18px;
+}
+
+.svgcolor 
+{
+	fill: white;
+}
+
+.Foto1 
+{
+	width: 50%;
+}
+
+.Fotos img 
+{
+	width: 50%;
+	height: 500px;
+	float: left;
+}
+
+.tekst 
+{
+	background-color: black;
+	width: 50%;
+	height: 250px;
+}
+
+.kenmerken table,th,td 
+{
+	border: 2px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid black;
+}
+
+.form-wrap, .contact ,  .omschrijving, .kenmerken 
+{
+	margin:  50px auto;
+	border: 1px solid black;
+	background-color: white;
+}
+
+.form-wrap
+{ 
+	width: 320px; 
+	background: #3e3d3d; 
+	padding: 40px 20px; 
+	box-sizing: border-box; 
+}
+ h1
+{
+	text-align: center; color: #fff; font-weight: normal; margin-bottom: 20px;
+}
+
+input
+{
+	width: 100%; 
+	background: none; 
+	border: 1px solid #fff; 
+	border-radius: 3px; 
+	padding: 6px 15px; 
+	box-sizing: border-box; 
+	margin-bottom: 20px; font-size: 16px; color: #fff;
+}
+
+input[type="button"]
+{
+	 background: #bac675; border: 0; cursor: pointer; color: #3e3d3d;
+}
+input[type="button"]:hover
+{
+	 background: #a4b15c; transition: .6s;
+}
+
+::placeholder
+{
+	color: #fff;
+}
+
+body 
+{
+	font-family: monospace;
+	font-size: 1.4vw;
+	background: rgb(34,193,195);
+	background: -moz-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+	background: -webkit-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+	background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endColorstr="#fdbb2d",GradientType=1);
+}
+
+textarea
+{
+	margin-left: -16px;
+}

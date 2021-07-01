@@ -1,0 +1,245 @@
+body,html
+{
+	background-color: rgb(169, 221, 155);
+	margin:0;
+  	padding:0;
+	height: fit-content;
+	background-image: url("https://media2.giphy.com/media/46w1IOrciFeQo/source.gif");
+    background-repeat: no-repeat;
+    background-size: 2300px 500px;
+}
+
+nav
+{
+	position: top;
+	display: flex;
+	width: 640px;
+	margin: 4rem auto;
+	position: sticky;
+}
+nav a
+{
+	width: 20%;
+  	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+}
+nav a:hover
+{
+	transition: font-size .1s linear,
+	font-weight .1s linear;
+	color: #FFCC00 ;
+}
+h2 
+{
+	color: #e5f9fa;
+}
+#nav 
+{
+	list-style: none;
+	position:absolute;
+	right:50%;
+	margin-right:155px;
+	margin-top:220px;
+}
+h1 
+{
+	width: 150;
+	height: 150;
+	color: aliceblue
+}
+.container img 
+{
+  width: 100%;
+  display: block;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  transition: all 100ms ease-out;
+}
+.image1
+{
+	margin-top: 398px;
+}
+.container img:hover 
+{
+  transform: scale(1.04);
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+h2 
+{
+	width: 150;
+	height: 150;
+	font-weight: 150;
+	font-family: monospace,Helvetica, sans-serif;
+	color:aliceblue;
+}
+#logoweb
+{
+	position: absolute;
+	float: left;
+	padding: 0 20px 20px 0;
+	width: 300px;
+	height: 380px;
+	right: 10px;
+}
+
+.Openingstijden 
+{
+	text-align: center;
+	margin-top: 420px;
+	color: aliceblue;
+}
+
+.logoTekst
+{
+	color: rgb(255, 204, 0);
+	text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
+	font:'BazarMedium';
+	letter-spacing: 10px;
+	text-align: center;
+}
+.gerechten
+{
+	color: rgb(255, 204, 0);
+	text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
+	font:'BazarMedium';
+	letter-spacing: 10px;
+	text-align: center;
+}
+input[type=submit] 
+{
+  width: 12,5%;            
+  background-color: #077402;
+  color: rgb(255, 255, 255);
+  padding: 10px 18px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 8%;
+}
+input[type=text]
+{
+width: 12,5%;
+background-color: rgb(255, 255, 255);
+color: rgb(7, 61, 30);
+font-size: 12pt;
+padding: 10px 18px;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+input[type=email] {
+	width: 12,5%;
+  background-color: rgb(255, 255, 255);
+	color: rgb(7, 61, 30);
+	font-size: 12pt;
+  padding: 10px 18px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=number] {
+	width: 165px;
+  background-color: rgb(255, 255, 255);
+	color: rgb(7, 61, 30);
+	font-size: 12pt;
+  padding: 10px 18px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 1800px)
+{
+	#logoweb
+	{
+		width: 175px;
+		height: 200px;
+	}
+}
+
+@media screen and (max-width: 1000px)
+{
+	body
+	{
+		font-size: 8pt
+	}
+
+	.logoTekst
+	{
+		font-size: 20pt;
+	}
+
+	#logoweb
+	{
+		width: 100px;
+		height: 128px;
+	}
+
+	nav
+	{
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		left: 36%;
+		font-size: 15pt;
+	}
+}
+
+.formContainer 
+{
+	margin-top: 400px;
+	margin-left: 44%;
+	min-height: 100%;
+	margin-bottom: -50px;
+}
+
+.footer, .push
+{
+	height: 150px;
+}
+
+footer 
+{
+  width: 100%;
+  height: 150px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  bottom: 0;
+}
+
+
+
+label 
+{
+	color: aliceblue;
+}
+
+.omschrijving
+{
+	width: 100%;
+	height: fit-content;
+	border: #077402;
+}
+
+.omschrijving h3
+{
+	color: antiquewhite;
+}
+
+.overonsINFO
+{
+	margin-top: 483px;
+	text-align: center;
+}

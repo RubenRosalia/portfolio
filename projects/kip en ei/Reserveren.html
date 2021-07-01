@@ -1,0 +1,54 @@
+<!Doctype html>
+<html>
+<head>
+        <link rel="icon" type="image/png" href="./images/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <a href="./index.html">  <img id="logoweb"src="./images/logoweb.png"></a>
+    <!--Logo tekst-->
+    <center>
+        <h1 class="logoTekst">Kip en Ei</h1>
+     </center>
+        <!--Navigatie-->
+        <nav>
+            <a href="./index.html" class="current">HOME</a>
+            <a href="./pdf/MENUKAART.pdf">MENUKAART</a>
+            <a href="./info.html">INFO</a>
+            <a href="./Over ons.html">OVER ONS</a>
+            <a href="./Reserveren.html">Reserveren</a>
+        </nav>
+        <div class="formContainer">
+            <h2 class="tekst">Reserveren</h3>
+            <form action="https://formspree.io/f/mleabpzd" method="POST">
+                <label for="Voornaam">Naam</label>
+                <br>
+                <input min="2" type="text" required name="Voornaam" id="Naam">
+                <br>
+                <label for="Achternaan">Achternaam</label>
+                <br>
+                <input min="2" type="text" required name="Achternaam">
+                <br>
+                <label for="Email">Email</label>
+                <br>
+                <input type="email" required name="Email" id="Email">
+                <br>
+                <label for="personen">Aantal personen</label>
+                <br>
+                <input type="number" min="1" max="25" name="perssonen"  id="personen">
+                <br>
+                <input type="submit" id="submit" value="Verzend">
+            </form>
+            <div class="push"></div>
+    </div>
+
+    <footer class="infoFooter">
+        <p>Mail:contact@KIPenEI.nl</p>
+        <p>Telefoon:015-2525978</p>
+    </footer>     
+</body>
+</html>
+
+
