@@ -1,0 +1,55 @@
+/* Styles for the about-me section */
+.about-me {
+    height: 100vh; /* 100% of viewport height */
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-image: url(../../../../resources/images/hero_pattern.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    transition: all 1s; /* Smooth transition for all properties */
+}
+
+/* Styles for the name in the about-me section */
+.about-me__name {
+    color: white;
+    font-size: 96px;
+    font-family: 'Poppins', sans-serif;
+
+    /* Media queries for responsive font sizes */
+    @include media('<715px') {
+        font-size: 84px;
+    }
+
+    @include media('<632px') {
+        font-size: 72px;
+    }
+
+    @include media('<549px') {
+        font-size: 60px;
+    }
+
+    @include media('<465px') {
+        font-size: 46px;
+    }
+}
+
+/* Styles for the description in the about-me section */
+.about-me__description {
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 3px;
+
+    /* Media query for responsive font size */
+    @include media('<495px') {
+        font-size: 32.9px;
+    }
+}

@@ -1,0 +1,76 @@
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #1a2438; /* Background color for the section */
+}
+
+.project-box {
+  display: flex;
+  flex-basis: 100%; // Full width by default
+  margin-bottom: 90px;
+  margin-top: 26px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: background-color 0.8s ease, opacity 0.5s ease;
+}
+
+.project-box__thumbnail {
+  height: 300px;
+  width: 500px;
+  background-size: cover;
+    background-attachment: fixed;
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+}
+
+.project-box__title,
+.project-box__description {
+  color: #ffffff;
+  margin-top: 18px;
+  font-family: $default-font;
+  letter-spacing: 0.2rem;
+}
+
+.project-box-buttons__wrapper {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: flex-end; /* Align items to the end (right) of the container */
+  margin-top: 32px;
+}
+
+.project-box__button {
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  background-color: #5a7ffb;
+  color: white;
+  margin-right: 20px; // Adjusted margin
+  margin-left: 20px; // Adjusted margin
+  text-decoration: none;
+  padding: 5px; /* Adjust padding as needed */
+  width: 150px; /* Set a fixed width for the buttons */
+}
+
+.project-box__button:hover {
+  transition: 0.8s ease, opacity 0.5s ease;
+  background-color: #063ae9;
+}
+
+.project-box__button p {
+  display: flex; /* Ensure text and icon are on the same line */
+  align-items: center; /* Align text and icon vertically */
+  margin-left: auto;
+  font-size: 17px;
+
+}
+
+.project-box__button-svg {
+  display: flex;
+  width: 25px;
+  height: 26px; /* Set a fixed height for the SVG icons */
+  margin-left: auto;
+  margin-right: 18px;
+}

@@ -1,0 +1,119 @@
+/* Styles for the skills section */
+.skills {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #1a2540; /* Background color for the section */
+  transition: all 1s; /* Smooth transition for all properties */
+}
+
+/* Styles for individual skill boxes */
+.skill-box {
+  display: flex; /* Center align the content */
+  flex-basis: 25%;
+  margin-bottom: 90px;
+  margin-top: 26px;
+  flex-direction: column; /* Stack the image and text vertically */
+  align-items: center; /* Center align items horizontally */
+  text-align: center; /* Center align text within the box */
+  transition: background-color 0.8s ease, opacity 0.5s ease;
+}
+
+/* Styles for skill box images */
+.skill-box img {
+  height: 150px;
+}
+
+/* Styles for skill box headings */
+.skill-box h2 {
+  color: #ffffff;
+  margin-top: 18px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: .2rem;
+}
+
+#skill-html5:hover {
+  background-color: #e34f26;
+}
+
+#skill-css:hover {
+  background-color: #007DB7;
+}
+
+#skill-sass:hover {
+  background-color: #CE659B;
+}
+
+#skill-php:hover {
+  background-color: #7A7EB6;
+}
+
+#skill-sql:hover {
+  background-color: #003399;
+}
+
+#skill-javascript:hover {
+  background-color: #F7DF1E;
+}
+
+#skill-bootstrap:hover {
+  background-color: #8B13FB;
+}
+
+#skill-jquery:hover {
+  background-color: #0968AD;
+}
+
+#skill-wordpress:hover {
+  background-color: #111516;
+}
+
+#skill-ftp:hover {
+  background-color: #B30100;
+}
+
+#skill-npm:hover {
+  background-color: #C53634;
+}
+
+#skill-gulp:hover {
+  background-color: #CE4747;
+}
+
+#skill-ssh:hover {
+  background-color: #1ECB13;
+}
+
+#skill-mysql:hover {
+  background-color: #025E87;
+}
+#skill-git:hover {
+  background-color: #E84E30;
+}
+
+#skill-docker:hover {
+  background-color: #1C63ED;
+}
+
+
+/* Media queries for responsiveness */
+@include media('<=1200px') {
+  .skill-box {
+    flex-basis: 33.33%;
+  }
+}
+
+@include media('<=768px') {
+  .skill-box {
+    flex-basis: 50%;
+  }
+}
+
+@include media('<=480px') {
+  .skill-box {
+    flex-basis: 100%;
+  }
+}
