@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ruben Rosalia">
     <title>Ruben Rosalia</title>
     <script type="module" src="dist/js/main.min.js"></script>
     <link rel="stylesheet" href="dist/css/main.min.css">
@@ -10,17 +11,17 @@
 <body>
     <div class="main-container">
         <!-- Navbar -->
-        <div class="navbar padding-horizontal-24">
-        <div class="navbar-logo"><li class="navbar-item"><a href="#" class="navbar-link">Ruben Rosalia</a></li></div>
-        <ul class="navbar-list">
-            <li class="navbar-item"><a href="#about" class="navbar-link">About</a></li>
-            <li class="navbar-item"><a href="#skills" class="navbar-link">Skills</a></li>
-            <li class="navbar-item"><a href="#projects" class="navbar-link">Projects</a></li>
-            <li class="navbar-item"><a href="#contact" class="navbar-link">Contact</a></li>
-        </ul>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">&#9776;</label>
-        </div>
+    <ul class="navbar padding-horizontal-24">
+        <ul class="navbar-logo"><li class="navbar-item"><a href="#" class="navbar-link">Ruben Rosalia</a></li></ul>
+            <ul class="navbar-list">
+                <li class="navbar-item"><a href="#about" class="navbar-link">About</a></li>
+                <li class="navbar-item"><a href="#skills" class="navbar-link">Skills</a></li>
+                <li class="navbar-item"><a href="#projects" class="navbar-link">Projects</a></li>
+                <li class="navbar-item"><a href="#contact" class="navbar-link">Contact</a></li>
+            </ul>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    </ul>
 
         <!-- Hidden Menu Content -->
         <div id="menu-content">
@@ -105,7 +106,7 @@
                     $project_url .
                     '" class="project-box__button">';
                 echo "<p>Live Site</p>";
-                echo '<img src="resources/svg/link.svg" class="project-box__button-svg" loading="lazy">';
+                echo '<img src="resources/svg/link.svg" class="project-box__button-svg" loading="lazy" alt="link icon">';
                 echo "</a>";
 
                 // Source.
@@ -113,7 +114,7 @@
                     $project_source .
                     '" class="project-box__button">';
                 echo "<p>Code</p>";
-                echo '<img src="resources/svg/code.svg" class="project-box__button-svg" loading="lazy">';
+                echo '<img src="resources/svg/code.svg" class="project-box__button-svg" loading="lazy" alt="code icon">';
                 echo "</a>";
 
                 echo "</div>";
