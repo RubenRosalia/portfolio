@@ -98,6 +98,11 @@
   background-color: #1C63ED;
 }
 
+#skill-vuejs:hover {
+  background-color: #42b883;
+}
+
+
 /* Media queries for responsiveness */
 @include media('<=1200px') {
   .skill-box {
