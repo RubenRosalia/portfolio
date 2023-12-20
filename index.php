@@ -7,6 +7,16 @@
     <title>Ruben Rosalia</title>
     <script type="module" src="dist/js/main.min.js"></script>
     <link rel="stylesheet" href="dist/css/main.min.css">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158980609-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-158980609-1');
+</script>
+
 </head>
 <body>
     <div class="main-container">
