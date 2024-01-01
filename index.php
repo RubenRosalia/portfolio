@@ -7,6 +7,7 @@
     <title>Ruben Rosalia</title>
     <script type="module" src="dist/js/main.min.js"></script>
     <link rel="stylesheet" href="dist/css/main.min.css">
+    <script async src="https://eu.umami.is/script.js" data-website-id="a12e49a3-61f7-4a9e-94f2-8af25a08a93a"></script>
 </head>
 <body>
 
