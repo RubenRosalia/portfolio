@@ -13,7 +13,7 @@
     background-attachment: fixed;
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Do not repeat the background image */
-    transition: all 1s; /* Smooth transition for all properties */
+    transition: all 0.2s; /* Smooth transition for all properties */
 }
 
 /* Styles for the name in the about-me section */
@@ -21,6 +21,8 @@
     color: white;
     font-size: 96px;
     font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    transition: text-shadow 1s ease-in-out .22s; // 1s duration, ease-in-out timing function, 0.5s delay
 
     /* Media queries for responsive font sizes */
     @include media('<715px') {
@@ -40,6 +42,12 @@
     }
 }
 
+.about-me__name:hover {
+    
+    text-shadow: 5px 5px 1px #a8ccf7;
+
+}
+
 /* Styles for the description in the about-me section */
 .about-me__description {
     color: white;
@@ -47,9 +55,16 @@
     text-align: center;
     font-family: 'Roboto Mono', monospace;
     letter-spacing: 3px;
+    font-weight: 900;
+    text-shadow: 5px 5px 1px #16202a;
+    transition: text-shadow 1s ease-in-out .22s; // 1s duration, ease-in-out timing function, 0.5s delay
 
     /* Media query for responsive font size */
     @include media('<495px') {
         font-size: 32.9px;
     }
+}
+
+.about-me__description:hover {
+    text-shadow: 5px 5px 1px #a8ccf7;
 }
