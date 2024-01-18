@@ -12,3 +12,6 @@ node_modules
 
 #Ignore db config
 auth/db.php
+
+#rest 
+npm-debug.log*
