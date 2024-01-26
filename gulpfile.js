@@ -1,10 +1,18 @@
+/**
+ * initialize variables.
+ * @init  variables
+ */
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const terser = require('gulp-terser');
 const cleanCSS = require('gulp-clean-css');
 const rename = require('gulp-rename');
+const livereload = require('gulp-livereload');
 
-// Compile and Minify SASS to CSS
+/**
+ * Gulp task to compile and minify SASS to CSS.
+ * @task sass
+ */
 gulp.task('sass', function () {
   return gulp
     .src('src/scss/**/*.scss')
@@ -14,7 +22,10 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('dist/css'));
 });
 
-// Minify main.js inside src/js and output to dist/js
+/**
+ * Gulp task to Minify main.js inside src/js and output to dist/js.
+ * @task js-main
+ */
 gulp.task('js-main', function () {
   return gulp
     .src('src/js/main.js')
@@ -23,19 +34,38 @@ gulp.task('js-main', function () {
     .pipe(gulp.dest('dist/js'));
 });
 
-// Copy all JavaScript files in src/js/modules to dist/js/modules
+/**
+ * Gulp task to Copy all JavaScript files in src/js/modules to dist/js/modules.
+ * @task js-modules
+ */
 gulp.task('js-modules', function () {
   return gulp
     .src('src/js/modules/**/*.js')
     .pipe(gulp.dest('dist/js/modules'));
 });
 
-// Default task (run 'gulp' in the terminal)
-gulp.task('default', gulp.series('sass', 'js-main', 'js-modules'));
+/**
+ * Gulp task to automatically reload the browser when files change on port 80.
+ * @task live-reload
+ */
+gulp.task('live-reload', function() {
+  livereload.listen({ port: 80 });
+  gulp.watch(['dist/**', '*.php', '*.html']).on('change', livereload.changed);
+});
 
-// Watch for changes in SASS and JavaScript files
+/**
+ * Gulp task to start gulp (run 'gulp' in the terminal)
+ * @task gulp
+ */
+gulp.task('default', gulp.series('sass', 'js-main', 'js-modules', 'live-reload'));
+
+/**
+ * Gulp task to Watch for changes in SASS and JavaScript files
+ * @task watch
+ */
 gulp.task('watch', function () {
-  gulp.watch('src/scss/**/*.scss', gulp.series('sass'));
-  gulp.watch('src/js/main.js', gulp.series('js-main'));
-  gulp.watch('src/js/modules/**/*.js', gulp.series('js-modules'));
+  gulp.watch('src/scss/**/*.scss', gulp.series('sass'))
+  gulp.watch('src/js/main.js', gulp.series('js-main'))
+  gulp.watch('src/js/modules/**/*.js', gulp.series('js-modules'))
+  gulp.watch(['dist/**', '*.php', '*.html'], gulp.series('live-reload'))
 });
