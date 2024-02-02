@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ruben Rosalia">
-    <title>Ruben Rosalia</title>
+    <title>Ruben Rosalia - portfolio</title>
     <script type="module" src="dist/js/main.min.js"></script>
     <link rel="stylesheet" href="dist/css/main.min.css">
     <!-- Umami analytics -->

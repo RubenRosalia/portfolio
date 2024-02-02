@@ -1,12 +1,18 @@
 // Node Modules
 @import '../../node_modules/include-media/dist/_include-media';
 
-// Partials
+// utilities
+@import './partials/utilities/variables';
+@import './partials/utilities/padding';
+
+// Layout
 @import './partials/layout/main-container';
 @import './partials/layout/navbar';
 @import './partials/layout/about';
 @import './partials/layout/footer';
 @import './partials/layout/skills';
-@import './partials/utilities/padding';
-@import './partials/utilities/variables';
 @import './partials/layout/projects';
+
+// Page
+@import './partials/page/_dashboard';
+
